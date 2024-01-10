@@ -1,1 +1,9 @@
 /* This file will hold or contain css root variables */
+
+:root {
+  --primary-color: #0d043d;
+  --secondary-color: #961f15;
+  --grey-color: #b1b0aa;
+  --yellow-color: #e5b818;
+  --white-color: #fff;
+}
