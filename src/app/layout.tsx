@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
-import { inter } from './ui/fonts';
-import './ui/globals.css';
+import { inter } from './_ui/fonts';
+import './_ui/token.css';
+import './_ui/globals.css';
+import { Header } from './_components/Header/Header';
 
 
 export const metadata: Metadata = {
@@ -15,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
