@@ -1,13 +1,18 @@
 import Link from "next/link";
 import style from "./Header.module.css";
 
-const Header = () => {
+type Props = {
+  open: Boolean;
+  toggleMenu: () => void;
+}
+
+const Header = ({ open, toggleMenu }: Props) => {
   return (
     <header className={style.header}>
       <div className={style.menu_wrapper}>
         <div className={style.menu_bar}>
-          <div className={style.logo_container}></div>
-          <nav className={style.nav}>
+          <div className={style.logo_container}>Logo</div>
+          <nav className={`${style.nav} ${open && style.nav_mobile}`}>
             <ul className={style.nav_list}>
               <li className={style.nav_item}>
                 <button type="button" className={style.nav_button}>About</button>
@@ -45,7 +50,12 @@ const Header = () => {
             </ul>
           </nav>
         </div>
-        <button aria-label="Open menu" className={style.burger_menu} type="button">
+        <button
+          aria-label="Open menu"
+          className={style.burger_menu}
+          type="button"
+          onClick={toggleMenu}
+        >
           <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-menu-2" width="24"
             height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
             stroke-linecap="round" stroke-linejoin="round">
@@ -55,6 +65,13 @@ const Header = () => {
             <path d="M4 18l16 0" />
           </svg>
         </button>
+        {/* <button aria-label="Open menu" className={style.burger_close} type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </button> */}
       </div>
     </header>
   )
