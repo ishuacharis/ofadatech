@@ -23,6 +23,7 @@
   /* padding: 0px 1em; */
   border-bottom: 1px solid var(--black-color);
   height: var(--navbar-height);
+  background: var(--header-bg);
 }
 
 .menu_bar {

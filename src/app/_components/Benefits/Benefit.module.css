@@ -1,0 +1,38 @@
+.benefit {
+  display: flex;
+  padding: 5em 4em 3em 3em;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6em;
+  align-self: stretch;
+  border-radius: 10px;
+  border: 2px solid var(--secondary-color);
+  background: var(--white-color);
+  box-shadow: 4px 4px 0px 1px var(--primary-color);
+}
+
+.benefit h6 {
+  font-size: 2.2rem;
+  line-height: 28px;
+}
+
+.benefit p {
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: var(--grey-color);
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .benefit {
+    width: calc(50% - 4em);
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .benefit {
+    width: calc(30% - 2em);
+    padding: 6em 4em 4em 4em;
+  }
+}

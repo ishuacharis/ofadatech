@@ -1,10 +1,10 @@
-import Image from 'next/image'
+import { BenefitList } from './_components/Benefits/BenefitList'
 import styles from './page.module.css'
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      home page
+      <BenefitList />
     </main>
   )
 }
