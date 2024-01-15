@@ -209,16 +209,19 @@
   pointer-events: all;
 }
 
-.burger_menu:hover {
+.burger_menu:hover,
+.burger_close:hover {
   background-color: var(--primary-color);
 }
 
-.burger_menu:focus {
+.burger_menu:focus,
+.burger_close:focus {
   outline: 1px solid var(--primary-color);
 }
 
 
-.burger_menu svg {
+.burger_menu svg,
+.burger_close:hover {
   height: 1.5em;
   stroke: var(--white-color);
   width: 1.5em;
@@ -229,6 +232,7 @@
 }
 
 @media screen and (min-width: 768px) {
+  .burger_menu,
   .burger_menu {
     display: none;
     outline: none;
