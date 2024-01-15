@@ -3,6 +3,7 @@ import { inter } from './_ui/fonts';
 import './_ui/token.css';
 import './_ui/globals.css';
 import { HeaderWrapper } from './_components/Header/HeaderWrapper';
+import { Footer } from './_components/Footer/Footer';
 
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <HeaderWrapper />
         {children}
+        <Footer />
       </body>
     </html>
   )

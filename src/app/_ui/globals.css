@@ -26,3 +26,27 @@ button {
   background: none;
   cursor: pointer;
 }
+
+.row {
+  padding-inline: 3em;
+}
+
+@media screen and (min-width: 768px) {
+  .row {
+    padding-inline: 6em;
+  }
+}
+
+
+@media screen and (min-width: 991px) {
+  .row {
+    padding-inline: 8em;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .row {
+    padding-inline: 3em;
+  }
+}
