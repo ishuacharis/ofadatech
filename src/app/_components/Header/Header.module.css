@@ -23,7 +23,7 @@
   /* padding: 0px 1em; */
   border-bottom: 1px solid var(--black-color);
   height: var(--navbar-height);
-  background: var(--header-bg);
+  /* background: var(--header-bg); */
 }
 
 .menu_bar {
@@ -78,11 +78,11 @@
   background: transparent;
   padding-inline: 2em;
   border-radius: 5px;
-  /* position: relative; */
 }
 
 .nav_item:hover {
-  background: var(--black-color);
+  /* background: var(--black-color); */
+  background: var(--primary-color);
 }
 
 .nav_item:hover .nav_button {
@@ -139,7 +139,7 @@
   width: 100%;
   border: 1px solid var(--gray-color);
   z-index: 2;
-  background: var(--nav-dropdown-bg, #333333);
+  background: var(--primary-color);
   animation: fadeIn 0.2s ease-in-out;
 }
 
@@ -256,7 +256,6 @@
     display: flex;
     height: var(--navbar-height);
     padding-right: 4em;
-    /* background: var(--nav-bg); */
     position: initial;
     left: initial;
     top: initial;
