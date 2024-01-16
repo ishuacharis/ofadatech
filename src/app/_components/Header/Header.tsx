@@ -42,6 +42,29 @@ const Header = ({ open, toggleMenu }: Props) => {
                 </div>
               </li>
               <li className={style.nav_item}>
+                <button type="button" className={style.nav_button}>Admission</button>
+                <div className={style.nav_dropdown_wrapper}>
+                  <div className={style.nav_dropdown}>
+                    <div className={style.nav_dropdown_content}>
+                      <div className={style.nav_dropdown_content_summary}>
+                        <h2>Aadmission</h2>
+                        <br></br>
+                        <p>
+                          Since 1962, Ofada Technical school has built a proud heritage of attracting intelligent, competitive students and empowered each one of them reach their full potential. We are dedicated to intellectual leadership, collaboration, highest moral standards, innovative research and a winning spirit — in academics, athletics and all other areas of life.
+                          <br></br>
+                          Come discover why the University of Lagos is the university of first choice and the nations pride.
+                        </p>
+                      </div>
+                      <ul className={style.nav_dropdown_list}>
+                        <li className={style.nav_dropdown_list_item}>
+                          <Link href={"/admission/requirements"} className={style.nav_dropdown_list_link}>Requirements</Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className={style.nav_item}>
                 <Link href={"/#"} className={style.nav_link}>Academics</Link>
               </li>
               <li className={style.nav_item}>
