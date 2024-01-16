@@ -1,0 +1,9 @@
+.video {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-color);
+  display: grid;
+  place-items: center;
+  color: var(--white-color);
+  font-size: 8em;
+}
