@@ -45,7 +45,7 @@ const Header = ({ open, toggleMenu }: Props) => {
                 <Link href={"/#"} className={style.nav_link}>Programs</Link>
               </li>
               <li className={style.nav_item}>
-                <Link href={"/#"} className={style.nav_link}>Contact</Link>
+                <Link href={"/contact"} className={style.nav_link}>Contact</Link>
               </li>
             </ul>
           </nav>

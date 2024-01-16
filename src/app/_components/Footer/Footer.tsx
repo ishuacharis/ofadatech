@@ -20,11 +20,15 @@ const Footer = () => {
               <ul className={style.details}>
                 <li className={style.detail_item}>
                   <IoMail size={40} className={style.svg} />
-                  <span>hello@ofadtech.ng</span>
+                  <span>info@ofadtech.ng</span>
                 </li>
                 <li className={style.detail_item}>
                   <FaSquarePhone size={40} className={style.svg} />
-                  <span>+2348-92773785</span>
+                  <span>+234-8134755083</span>
+                </li>
+                <li className={style.detail_item}>
+                  <FaSquarePhone size={40} className={style.svg} />
+                  <span>+234-8033323907</span>
                 </li>
               </ul>
             </div>
