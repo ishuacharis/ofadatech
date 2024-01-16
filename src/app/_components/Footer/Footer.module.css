@@ -2,7 +2,7 @@
   padding-top: 6em;
   padding-bottom: 3em;
   background: var(--primary-color);
-  color: var(--grey-color);
+  color: #eee;
 }
 
 .about {
@@ -67,13 +67,13 @@
 }
 
 .quick_link_item li a {
-  color: var(--grey-color);
+  color: #eee;
 }
 
 .copyright_content {
   padding-block: 1.6rem;
-  border-top: 1px solid var(--grey-color);
-  border-bottom: 1px solid var(--grey-color);
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .copyright_content {
@@ -93,7 +93,7 @@
 .footer_link_item {
   font-size: 1.4rem;
   position: relative;
-  color: var(--grey-color);
+  color: #eee;
 }
 
 .footer_link_item a {
@@ -107,7 +107,7 @@
   top: 0;
   width: 2px;
   height: 100%;
-  background: var(--grey-color);
+  background: #eee;
 }
 
 .footer_link_item:nth-child(2) {
@@ -121,7 +121,7 @@
   top: 0;
   width: 2px;
   height: 100%;
-  background: var(--grey-color);
+  background: #eee
 }
 
 .footer_link_item:nth-child(2)::after {
@@ -131,7 +131,7 @@
   top: 0;
   width: 2px;
   height: 100%;
-  background: var(--grey-color);
+  background: #eee;
 }
 
 .socials {
