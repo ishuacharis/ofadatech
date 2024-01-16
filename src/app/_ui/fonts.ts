@@ -1,7 +1,7 @@
 // This will file will hold the fonts to be used for the project
 import { Outfit, Raleway } from 'next/font/google';
 
-const inter = Outfit({
+const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ['latin'],
   weight: ["100", "900"],
@@ -16,4 +16,4 @@ const raleway = Raleway({
   display: "swap"
 });
 
-export { inter, raleway };
+export { outfit, raleway };

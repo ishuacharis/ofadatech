@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { inter } from './_ui/fonts';
+import { outfit, raleway } from './_ui/fonts';
 import './_ui/token.css';
 import './_ui/globals.css';
 import { HeaderWrapper } from './_components/Header/HeaderWrapper';
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${outfit.variable} ${raleway.variable}`}>
         <HeaderWrapper />
         {children}
         <Footer />
