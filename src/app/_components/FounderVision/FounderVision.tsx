@@ -17,7 +17,9 @@ const FounderVision = () => {
               <span className={style.details_title}>M.Sc(Lancaster) FCCA, FCA, ACTIN</span>
             </div>
           </div>
-          <div className={style.img_container}></div>
+          <div className={style.img_container}>
+            Placeholder for image
+          </div>
         </div>
       </div>
     </section>
