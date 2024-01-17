@@ -79,19 +79,22 @@ const Header = ({ open, toggleMenu }: Props) => {
                       </div>
                       <ul className={style.nav_dropdown_list}>
                         <li className={style.nav_dropdown_list_item}>
-                          <Link href={"/#"} className={style.nav_dropdown_list_link}>Faculty of Engineering</Link>
+                          <Link href={"/academics/engineering"} className={style.nav_dropdown_list_link}>Faculty of Engineering</Link>
                         </li>
                         <li className={style.nav_dropdown_list_item}>
-                          <Link href={"/#"} className={style.nav_dropdown_list_link}>Faculty of Nutrition</Link>
+                          <Link href={"/academics/hospitality"} className={style.nav_dropdown_list_link}>Faculty of Hospitality</Link>
                         </li>
                         <li className={style.nav_dropdown_list_item}>
-                          <Link href={"/#"} className={style.nav_dropdown_list_link}>Faculty of Agriculture</Link>
+                          <Link href={"/academics/agriculture"} className={style.nav_dropdown_list_link}>Faculty of Agriculture</Link>
                         </li>
                         <li className={style.nav_dropdown_list_item}>
-                          <Link href={"/#"} className={style.nav_dropdown_list_link}>Faculty of Business & Finance</Link>
+                          <Link href={"/academics/finance"} className={style.nav_dropdown_list_link}>Faculty of Business & Finance</Link>
                         </li>
                         <li className={style.nav_dropdown_list_item}>
-                          <Link href={"/#"} className={style.nav_dropdown_list_link}>Faculty of Computer Science</Link>
+                          <Link href={"/academics/art"} className={style.nav_dropdown_list_link}>Faculty of Creative Art</Link>
+                        </li>
+                        <li className={style.nav_dropdown_list_item}>
+                          <Link href={"/academics/computer"} className={style.nav_dropdown_list_link}>Faculty of Computer Science</Link>
                         </li>
                       </ul>
                     </div>

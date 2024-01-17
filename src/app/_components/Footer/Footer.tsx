@@ -15,7 +15,10 @@ const Footer = () => {
             <div className={style.about}>
               <div className={style.logo_container}>Logo</div>
               <p className={style.about_text}>
-                Founded in 1962, the University of Lagos has, for over 5 decades, provided qualitative and research-oriented education to Nigerians and all those who have entered its domain in search of knowledge. The University has built a legacy of excellence and has been instrumental in the production of top range graduates and academia who have had tremendous impact, directly or indirectly, on growth and development in Nigeria.
+                Empower today, succed tomorrow
+              </p>
+              <p className={style.about_text}>
+                Crafting futures, creating leaders
               </p>
               <ul className={style.details}>
                 <li className={style.detail_item}>

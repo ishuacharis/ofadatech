@@ -1,0 +1,25 @@
+.faculty_details {
+  margin-block: 6em;
+  padding-inline: 6rem;
+}
+
+.faculty_details h1 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+  
+.dept_list_item {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+  
+.dept_list_item::before {
+  content: "\2022";
+  color: var(--yellow-color);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+  
