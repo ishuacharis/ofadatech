@@ -66,8 +66,41 @@ const Header = ({ open, toggleMenu }: Props) => {
                 </div>
               </li>
               <li className={style.nav_item}>
-                <Link href={"/#"} className={style.nav_link}>Academics</Link>
+                <button type="button" className={style.nav_button}>Academics</button>
+                <div className={style.nav_dropdown_wrapper}>
+                  <div className={style.nav_dropdown}>
+                    <div className={style.nav_dropdown_content}>
+                      <div className={style.nav_dropdown_content_summary}>
+                        <h2>About us</h2>
+                        <br></br>
+                        <p>
+                          Our academic programs are rigorous and carefully modelled to prepare our students to be ahead.
+                        </p>
+                      </div>
+                      <ul className={style.nav_dropdown_list}>
+                        <li className={style.nav_dropdown_list_item}>
+                          <Link href={"/#"} className={style.nav_dropdown_list_link}>Faculty of Engineering</Link>
+                        </li>
+                        <li className={style.nav_dropdown_list_item}>
+                          <Link href={"/#"} className={style.nav_dropdown_list_link}>Faculty of Nutrition</Link>
+                        </li>
+                        <li className={style.nav_dropdown_list_item}>
+                          <Link href={"/#"} className={style.nav_dropdown_list_link}>Faculty of Agriculture</Link>
+                        </li>
+                        <li className={style.nav_dropdown_list_item}>
+                          <Link href={"/#"} className={style.nav_dropdown_list_link}>Faculty of Business & Finance</Link>
+                        </li>
+                        <li className={style.nav_dropdown_list_item}>
+                          <Link href={"/#"} className={style.nav_dropdown_list_link}>Faculty of Computer Science</Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </li>
+              {/* <li className={style.nav_item}>
+                <Link href={"/#"} className={style.nav_link}>Academics</Link>
+              </li> */}
             </ul>
           </nav>
         </div>
