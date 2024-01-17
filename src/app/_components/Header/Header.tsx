@@ -23,7 +23,7 @@ const Header = ({ open, toggleMenu }: Props) => {
                         <h2>About us</h2>
                         <br></br>
                         <p>
-                          Founded in 1962, the University of Lagos has, for over 5 decades, provided qualitative and research-oriented education to Nigerians and all those who have entered its domain in search of knowledge. The University has built a legacy of excellence and has been instrumental in the production of top range graduates and academia who have had tremendous impact, directly or indirectly, on growth and development in Nigeria.
+                          Ofada Technical College provides qualitative and research-oriented education to Nigerians and all those who have entered its domain in search of knowledge. The tecnical college has built a legacy of excellence and has been instrumental in the production of top range graduates and academia who have had tremendous impact, directly or indirectly, on growth and development in Nigeria.
                         </p>
                       </div>
                       <ul className={style.nav_dropdown_list}>
@@ -31,7 +31,7 @@ const Header = ({ open, toggleMenu }: Props) => {
                           <Link href={"/#"} className={style.nav_dropdown_list_link}>History</Link>
                         </li>
                         <li className={style.nav_dropdown_list_item}>
-                          <Link href={"/#"} className={style.nav_dropdown_list_link}>Leadership and Organogram</Link>
+                          <Link href={"/about/leadership"} className={style.nav_dropdown_list_link}>Leadership and Organogram</Link>
                         </li>
                         <li className={style.nav_dropdown_list_item}>
                           <Link href={"/#"} className={style.nav_dropdown_list_link}>Founder{"`"}s Vision</Link>
@@ -50,9 +50,10 @@ const Header = ({ open, toggleMenu }: Props) => {
                         <h2>Aadmission</h2>
                         <br></br>
                         <p>
-                          Since 1962, Ofada Technical school has built a proud heritage of attracting intelligent, competitive students and empowered each one of them reach their full potential. We are dedicated to intellectual leadership, collaboration, highest moral standards, innovative research and a winning spirit — in academics, athletics and all other areas of life.
+                          Ofada Technical school has built a proud heritage of attracting intelligent, competitive students and empowered each one of them reach their full potential.
+                          We are dedicated to intellectual leadership, collaboration, highest moral standards, innovative research and a winning spirit — in academics and all other areas of life.
                           <br></br>
-                          Come discover why the University of Lagos is the university of first choice and the nations pride.
+                          Come discover why Ofada Technical College is the leading technical college.
                         </p>
                       </div>
                       <ul className={style.nav_dropdown_list}>

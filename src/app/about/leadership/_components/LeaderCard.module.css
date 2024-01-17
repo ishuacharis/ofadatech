@@ -1,39 +1,39 @@
-.benefit {
+.leader {
   display: flex;
   padding: 5em 4em 3em 3em;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.6em;
   align-self: stretch;
-  border-radius: 10px;
-  border: 2px solid var(--secondary-color);
-  background: var(--white-color);
-  box-shadow: 4px 4px 0px 1px var(--primary-color);
+  width: 100%;
+  height: 300px;
   flex-grow: 1;
 }
 
-.benefit h6 {
-  font-size: 2.2rem;
-  line-height: 28px;
+.img_container {
+  height: 90%;
+  width: 100%;
+  background: var(--primary-color);
 }
-
-.benefit p {
+  
+.leader p {
   font-size: 1.6rem;
   line-height: 24px;
   color: #4C4C4D;
   font-weight: 500;
 }
 
-@media screen and (min-width: 768px) {
-  .benefit {
+@media screen and (min-width: 600px) {
+  .leader {
     width: calc(50% - 4em);
   }
 }
-
-
+  
+  
 @media screen and (min-width: 992px) {
-  .benefit {
+  .leader {
     width: calc(30% - 2em);
+    height: 250px;
     padding: 6em 4em 4em 4em;
   }
 }
