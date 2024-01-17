@@ -78,7 +78,6 @@
 }
 
 .nav_item:hover {
-  /* background: var(--black-color); */
   background: var(--primary-color);
 }
 
@@ -127,6 +126,7 @@
   top: 50px;
   left: 0px;
   width: 100%;
+  z-index: 20;
 }
 
 .nav_dropdown {
@@ -135,7 +135,6 @@
   padding: 0.8em;
   width: 100%;
   border: 1px solid var(--gray-color);
-  z-index: 2;
   background: var(--primary-color);
   animation: fadeIn 0.2s ease-in-out;
 }
