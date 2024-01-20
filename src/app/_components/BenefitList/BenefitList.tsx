@@ -1,6 +1,5 @@
-import React from "react";
-import { benefits } from "./benefits";
-import { BenefitCard } from "./BenefitCard";
+import { benefits } from "../Benefits/benefits";
+import { BenefitCard } from "../Benefits/BenefitCard";
 import { Each } from "../Each/Each";
 import style from "./BenefitList.module.css";
 

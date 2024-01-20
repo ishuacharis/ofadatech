@@ -1,4 +1,4 @@
-import { BenefitList } from './_components/Benefits/BenefitList';
+import { BenefitList } from './_components/BenefitList/BenefitList';
 import { FounderVision } from './_components/FounderVision/FounderVision';
 import { TextSliderWrapper } from './_components/TextSlider/TextSliderWrapper';
 import { Tour } from './_components/Tour/Tour';
