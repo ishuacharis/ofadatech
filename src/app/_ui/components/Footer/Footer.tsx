@@ -6,6 +6,35 @@ import { footerLinks, quickLinks } from "./links";
 import { Each } from "../Each/Each";
 import style from "./Footer.module.css";
 
+const contacts = [
+  {
+    text: "info@ofadtech.ng",
+    icon: <IoMail size={30} className={style.svg} />
+  },
+  {
+    text: "+234-8134755083",
+    icon: <FaSquarePhone size={30} className={style.svg} />
+  },
+  {
+    text: "+234-8033323907",
+    icon: <FaSquarePhone size={30} className={style.svg} />
+  },
+];
+const socials = [
+  {
+    label: "facebook",
+    icon: <FaFacebookSquare size={30} className={style.svg} />,
+  },
+  {
+    label: "x",
+    icon: <FaSquareXTwitter size={30} className={style.svg} />
+  },
+  {
+    text: "linkedin",
+    icon:  <FaLinkedin size={30} className={style.svg} />
+  },
+];
+
 const Footer = () => {
   return (
     <footer className={style.footer}>
@@ -21,18 +50,15 @@ const Footer = () => {
                 Crafting futures, creating leaders
               </p>
               <ul className={style.details}>
-                <li className={style.detail_item}>
-                  <IoMail size={30} className={style.svg} />
-                  <span>info@ofadtech.ng</span>
-                </li>
-                <li className={style.detail_item}>
-                  <FaSquarePhone size={30} className={style.svg} />
-                  <span>+234-8134755083</span>
-                </li>
-                <li className={style.detail_item}>
-                  <FaSquarePhone size={30} className={style.svg} />
-                  <span>+234-8033323907</span>
-                </li>
+                <Each
+                  of={contacts}
+                  render={(item: any, index: number) => (
+                    <li className={style.detail_item} key={index}>
+                      {item.icon}
+                      <span>{item.text}</span>
+                    </li>
+                  )}
+                />
               </ul>
             </div>
             <div className={style.quick_links}>
@@ -65,21 +91,16 @@ const Footer = () => {
                 />
               </ul>
               <ul className={style.socials}>
-                <li className={style.social_item}>
-                  <Link href={"/#"}>
-                    <FaFacebookSquare size={30} className={style.svg} />
-                  </Link>
-                </li>
-                <li className={style.social_item}>
-                  <Link href={"/#"}>
-                    <FaSquareXTwitter size={30} className={style.svg} />
-                  </Link>
-                </li>
-                <li className={style.social_item}>
-                  <Link href={"/#"}>
-                    <FaLinkedin size={30} className={style.svg} />
-                  </Link>
-                </li>
+                <Each
+                  of={socials}
+                  render={(item: any, index: number) => (
+                    <li className={style.social_item} key={index}>
+                      <Link href={"/#"}>
+                        {item.icon}
+                      </Link>
+                    </li>
+                  )}
+                />
               </ul>
             </div>
             <p className={style.copyright_text}>
