@@ -1,5 +1,7 @@
 import Link from "next/link";
 import style from "./Header.module.css";
+import { Each } from "../Each/Each";
+import { NavInfo, nav } from "@/data/nav";
 
 type Props = {
   open: Boolean;
@@ -14,96 +16,35 @@ const Header = ({ open, toggleMenu }: Props) => {
           {/* <div className={style.logo_container}>Logo</div> */}
           <nav className={`${style.nav} ${open && style.nav_mobile}`}>
             <ul className={style.nav_list}>
-              <li className={style.nav_item}>
-                <button type="button" className={style.nav_button}>About</button>
-                <div className={style.nav_dropdown_wrapper}>
-                  <div className={style.nav_dropdown}>
-                    <div className={style.nav_dropdown_content}>
-                      <div className={style.nav_dropdown_content_summary}>
-                        <h2>About us</h2>
-                        <br></br>
-                        <p>
-                          Ofada Technical College provides qualitative and research-oriented education to Nigerians and all those who have entered its domain in search of knowledge. The tecnical college has built a legacy of excellence and has been instrumental in the production of top range graduates and academia who have had tremendous impact, directly or indirectly, on growth and development in Nigeria.
-                        </p>
+              <Each
+                of={nav}
+                render={(item: NavInfo, index: number) => (
+                  <li className={style.nav_item} key={index}>
+                    <button type="button" className={style.nav_button}>{item.name}</button>
+                    <div className={style.nav_dropdown_wrapper}>
+                      <div className={style.nav_dropdown}>
+                        <div className={style.nav_dropdown_content}>
+                          <div className={style.nav_dropdown_content_summary}>
+                            <h2>{item.heading}</h2>
+                            <br></br>
+                            <p>{item.description}</p>
+                          </div>
+                          <ul className={style.nav_dropdown_list}>
+                            <Each
+                              of={item.sublinks}
+                              render={(link: string, index: number) => (
+                                <li className={style.nav_dropdown_list_item}>
+                                  <Link key={index} href={"/#"} className={style.nav_dropdown_list_link}>{link}</Link>
+                                </li>
+                              )}
+                            />
+                          </ul>
+                        </div>
                       </div>
-                      <ul className={style.nav_dropdown_list}>
-                        <li className={style.nav_dropdown_list_item}>
-                          <Link href={"/#"} className={style.nav_dropdown_list_link}>History</Link>
-                        </li>
-                        <li className={style.nav_dropdown_list_item}>
-                          <Link href={"/about/leadership"} className={style.nav_dropdown_list_link}>Leadership and Organogram</Link>
-                        </li>
-                        <li className={style.nav_dropdown_list_item}>
-                          <Link href={"/#"} className={style.nav_dropdown_list_link}>Founder{"`"}s Vision</Link>
-                        </li>
-                      </ul>
                     </div>
-                  </div>
-                </div>
-              </li>
-              <li className={style.nav_item}>
-                <button type="button" className={style.nav_button}>Admission</button>
-                <div className={style.nav_dropdown_wrapper}>
-                  <div className={style.nav_dropdown}>
-                    <div className={style.nav_dropdown_content}>
-                      <div className={style.nav_dropdown_content_summary}>
-                        <h2>Aadmission</h2>
-                        <br></br>
-                        <p>
-                          Ofada Technical school has built a proud heritage of attracting intelligent, competitive students and empowered each one of them reach their full potential.
-                          We are dedicated to intellectual leadership, collaboration, highest moral standards, innovative research and a winning spirit — in academics and all other areas of life.
-                          <br></br>
-                          Come discover why Ofada Technical College is the leading technical college.
-                        </p>
-                      </div>
-                      <ul className={style.nav_dropdown_list}>
-                        <li className={style.nav_dropdown_list_item}>
-                          <Link href={"/admission/requirements"} className={style.nav_dropdown_list_link}>Requirements</Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li className={style.nav_item}>
-                <button type="button" className={style.nav_button}>Academics</button>
-                <div className={style.nav_dropdown_wrapper}>
-                  <div className={style.nav_dropdown}>
-                    <div className={style.nav_dropdown_content}>
-                      <div className={style.nav_dropdown_content_summary}>
-                        <h2>About us</h2>
-                        <br></br>
-                        <p>
-                          Our academic programs are rigorous and carefully modelled to prepare our students to be ahead.
-                        </p>
-                      </div>
-                      <ul className={style.nav_dropdown_list}>
-                        <li className={style.nav_dropdown_list_item}>
-                          <Link href={"/academics/engineering"} className={style.nav_dropdown_list_link}>Faculty of Engineering</Link>
-                        </li>
-                        <li className={style.nav_dropdown_list_item}>
-                          <Link href={"/academics/hospitality"} className={style.nav_dropdown_list_link}>Faculty of Hospitality</Link>
-                        </li>
-                        <li className={style.nav_dropdown_list_item}>
-                          <Link href={"/academics/agriculture"} className={style.nav_dropdown_list_link}>Faculty of Agriculture</Link>
-                        </li>
-                        <li className={style.nav_dropdown_list_item}>
-                          <Link href={"/academics/finance"} className={style.nav_dropdown_list_link}>Faculty of Business & Finance</Link>
-                        </li>
-                        <li className={style.nav_dropdown_list_item}>
-                          <Link href={"/academics/art"} className={style.nav_dropdown_list_link}>Faculty of Creative Art</Link>
-                        </li>
-                        <li className={style.nav_dropdown_list_item}>
-                          <Link href={"/academics/computer"} className={style.nav_dropdown_list_link}>Faculty of Computer Science</Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              {/* <li className={style.nav_item}>
-                <Link href={"/#"} className={style.nav_link}>Academics</Link>
-              </li> */}
+                  </li>
+                )}
+              />
             </ul>
           </nav>
         </div>
