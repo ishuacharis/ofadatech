@@ -28,7 +28,7 @@
 }
 
 .detail_item {
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
   font-size: 1.6rem;
   line-height: 24px;
   display: flex;
@@ -49,13 +49,13 @@
 .quick_link_item h4 {
   font-size: 1.6rem;
   line-height: 24px;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   color: var(--white-color);
 }
 
 .quick_link_item li {
   font-size: 1.6rem;
-  margin-bottom: 1.4em;
+  margin-bottom: 0.5em;
 }
 
 .quick_link_item li::before {

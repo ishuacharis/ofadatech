@@ -1,7 +1,7 @@
 import Link from "next/link";
 import style from "./Header.module.css";
 import { Each } from "../Each/Each";
-import { NavInfo, nav } from "@/data/nav";
+import { NavInfo, nav } from "@/app/_ui/components/Header/nav";
 
 type Props = {
   open: Boolean;

@@ -2,9 +2,9 @@ import Link from "next/link";
 import { FaSquareXTwitter, FaLinkedin, FaSquarePhone } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import style from "./Footer.module.css";
 import { footerLinks, quickLinks } from "./links";
 import { Each } from "../Each/Each";
+import style from "./Footer.module.css";
 
 const Footer = () => {
   return (
@@ -22,15 +22,15 @@ const Footer = () => {
               </p>
               <ul className={style.details}>
                 <li className={style.detail_item}>
-                  <IoMail size={40} className={style.svg} />
+                  <IoMail size={30} className={style.svg} />
                   <span>info@ofadtech.ng</span>
                 </li>
                 <li className={style.detail_item}>
-                  <FaSquarePhone size={40} className={style.svg} />
+                  <FaSquarePhone size={30} className={style.svg} />
                   <span>+234-8134755083</span>
                 </li>
                 <li className={style.detail_item}>
-                  <FaSquarePhone size={40} className={style.svg} />
+                  <FaSquarePhone size={30} className={style.svg} />
                   <span>+234-8033323907</span>
                 </li>
               </ul>
@@ -67,17 +67,17 @@ const Footer = () => {
               <ul className={style.socials}>
                 <li className={style.social_item}>
                   <Link href={"/#"}>
-                    <FaFacebookSquare size={40} className={style.svg} />
+                    <FaFacebookSquare size={30} className={style.svg} />
                   </Link>
                 </li>
                 <li className={style.social_item}>
                   <Link href={"/#"}>
-                    <FaSquareXTwitter size={40} className={style.svg} />
+                    <FaSquareXTwitter size={30} className={style.svg} />
                   </Link>
                 </li>
                 <li className={style.social_item}>
                   <Link href={"/#"}>
-                    <FaLinkedin size={40} className={style.svg} />
+                    <FaLinkedin size={30} className={style.svg} />
                   </Link>
                 </li>
               </ul>
