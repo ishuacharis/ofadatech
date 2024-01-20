@@ -24,3 +24,4 @@ export const benefits = [
     text: "We foster a strong parent-school partnership to ensure seamless communication and collaboration."
   },
 ];
+  

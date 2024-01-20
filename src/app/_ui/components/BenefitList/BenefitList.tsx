@@ -1,4 +1,4 @@
-import { benefits } from "../Benefits/benefits";
+import { benefits } from "@/data/benefits";
 import { BenefitCard } from "../Benefits/BenefitCard";
 import { Each } from "../Each/Each";
 import style from "./BenefitList.module.css";
