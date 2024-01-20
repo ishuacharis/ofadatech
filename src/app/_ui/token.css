@@ -1,11 +1,14 @@
 /* This file will hold or contain css root variables */
 
 :root {
-  --primary-color: #0d043d;
+  --primary-color: #fff;
   --secondary-color: #961f15;
-  --header-bg: #961f15;
-  --grey-color: #b1b0aa;
+  --header-bg: #db6156;
+  --grey-color: #E5E4E2;
   --yellow-color: #e5b818;
   --white-color: #fff;
   --black-color: #121212;
+  --blue-color: #1434A4;
+  --hover-blue-color: #6495ED;
 }
+

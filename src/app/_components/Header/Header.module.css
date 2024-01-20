@@ -18,7 +18,7 @@
   z-index: 2;
   gap: 1.5rem;
   width: 100%;
-  border-bottom: 1px solid var(--black-color);
+  /* border-bottom: 1px solid var(--black-color); */
   height: var(--navbar-height);
   background: var(--header-bg);
 }
@@ -78,7 +78,7 @@
 }
 
 .nav_item:hover {
-  background: var(--primary-color);
+  background: var(--blue-color);
 }
 
 .nav_item:hover .nav_button {
@@ -130,11 +130,11 @@
 }
 
 .nav_dropdown {
-  border-radius: 8px;
+  border-radius: 2px;
   display: none;
   padding: 0.8em;
   width: 100%;
-  border: 1px solid var(--gray-color);
+  border: 1px solid #dadada;
   background: var(--primary-color);
   animation: fadeIn 0.2s ease-in-out;
 }
@@ -147,13 +147,15 @@
 
 .nav_dropdown_content_summary h2 {
   font-size: 3em;
-  color: var(--yellow-color);
+  /* color: var(--yellow-color); */
+  color: black
 }
 
 .nav_dropdown_content_summary p {
   font-size: 2em;
   line-height: 1.8;
-  color: var(--white-color);
+  /* color: var(--white-color); */
+  color: black;
 }
 
 .nav_dropdown_list {
@@ -178,15 +180,15 @@
   display: block;
   width: 100%;
   color: var(--text);
-  font-size: 1.8em;
-  color: var(--white-color);
+  font-size: 2.3em;
+  color: var(--black-color);
   padding-block: 1em;
-  font-weight: 700;
+  font-weight: 600;
   transition: color 500ms ease-in-out;
 }
 
 .nav_dropdown_list_link:hover {
-  color: var(--yellow-color);
+  color: var(--hover-blue-color);
 }
 
 .burger_menu,

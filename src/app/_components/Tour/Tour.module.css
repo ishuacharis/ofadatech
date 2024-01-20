@@ -1,9 +1,17 @@
+.container {
+  margin: 32px;
+  text-align: center;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #E5E4E2;
+}
+
 .video {
   width: 100%;
-  height: 100vh;
-  background-color: var(--primary-color);
-  display: grid;
-  place-items: center;
   color: var(--white-color);
   font-size: 8em;
+  font-weight: 700;
 }

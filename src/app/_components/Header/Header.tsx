@@ -11,7 +11,7 @@ const Header = ({ open, toggleMenu }: Props) => {
     <header className={style.header}>
       <div className={style.menu_wrapper}>
         <div className={style.menu_bar}>
-          <div className={style.logo_container}>Logo</div>
+          {/* <div className={style.logo_container}>Logo</div> */}
           <nav className={`${style.nav} ${open && style.nav_mobile}`}>
             <ul className={style.nav_list}>
               <li className={style.nav_item}>

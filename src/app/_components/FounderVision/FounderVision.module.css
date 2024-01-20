@@ -18,7 +18,7 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: var(--primary-color);
+  background-color: var(--grey-color);
 }
 
 .vision_summary_left {
@@ -53,8 +53,9 @@
 .img_container {
   width: 100%;
   height: 400px;
-  background: var(--primary-color);
+  background: var(--grey-color);
   font-size: 3rem;
+  font-weight: 700;
   display: grid;
   place-items: center;
   color: var(--white-color);

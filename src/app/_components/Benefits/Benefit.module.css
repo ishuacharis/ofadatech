@@ -6,7 +6,7 @@
   gap: 1.6em;
   align-self: stretch;
   border-radius: 10px;
-  border: 2px solid var(--secondary-color);
+  border: 2px solid var(--header-bg);
   background: var(--white-color);
   box-shadow: 4px 4px 0px 1px var(--primary-color);
   flex-grow: 1;
