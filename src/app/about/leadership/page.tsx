@@ -1,4 +1,4 @@
-import { Each } from "@/app/_components/Each/Each";
+import { Each } from "@/app/_ui/components/Each/Each";
 import style from "./page.module.css";
 import { LeaderCard } from "./_components/LeaderCard";
 

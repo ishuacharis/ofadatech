@@ -1,4 +1,4 @@
-import { Each } from "../../_components/Each/Each";
+import { Each } from "../../_ui/components/Each/Each";
 import { faculties } from "../faculties";
 
 import style from "./page.module.css";
