@@ -1,7 +1,7 @@
 import Link from "next/link";
 import style from "./Header.module.css";
 import { Each } from "../Each/Each";
-import { NavInfo } from "@/app/types/type";
+import { NavInfo, SubLinkInfo } from "@/app/types/type";
 import { nav } from "@/app/_ui/components/Header/nav";
 
 type Props = {
@@ -33,9 +33,9 @@ const Header = ({ open, toggleMenu }: Props) => {
                           <ul className={style.nav_dropdown_list}>
                             <Each
                               of={item.sublinks}
-                              render={(link: string, index: number) => (
+                              render={(sublink: SubLinkInfo, index: number) => (
                                 <li className={style.nav_dropdown_list_item}>
-                                  <Link key={index} href={"/#"} className={style.nav_dropdown_list_link}>{link}</Link>
+                                  <Link key={index} href={sublink.link} className={style.nav_dropdown_list_link}>{sublink.title}</Link>
                                 </li>
                               )}
                             />

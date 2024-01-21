@@ -1,8 +1,12 @@
+export interface SubLinkInfo {
+  title: string;
+  link: string;
+}
 export interface NavInfo {
   name: string;
   heading: string;
   description: string;
-  sublinks: string[];
+  sublinks: SubLinkInfo[];
 };
 
 export interface BenefitInfo {
