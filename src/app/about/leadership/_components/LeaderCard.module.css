@@ -13,7 +13,7 @@
 .img_container {
   height: 90%;
   width: 100%;
-  background: var(--primary-color);
+  background: var(--white-color);
 }
   
 .leader p {
