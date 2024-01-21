@@ -60,7 +60,27 @@ h6 {
   padding-inline: 3em;
 }
 
+.xs-padding-block {
+  padding-inline: 3em;
+}
+
+.xs-padding-block-start {
+  padding-inline: 3em;
+}
+
+.xs-padding-block-end {
+  padding-inline: 3em;
+}
+
 .xs-padding-inline {
+  padding-inline: 3em;
+}
+
+.xs-padding-inline-start {
+  padding-inline: 3em;
+}
+
+.xs-padding-inline-end {
   padding-inline: 3em;
 }
 
@@ -69,7 +89,27 @@ h6 {
     padding-inline: 6em;
   }
 
+  .sm-padding-block-start {
+    padding-inline: 6em;
+  }
+
+  .sm-padding-block-end {
+    padding-inline: 6em;
+  }
+
+  .sm-padding-block {
+    padding-inline: 6em;
+  }
+
   .sm-padding-inline {
+    padding-inline: 6em;
+  }
+
+  .sm-padding-inline-start {
+    padding-inline: 6em;
+  }
+
+  .sm-padding-inline-end {
     padding-inline: 6em;
   }
 }
