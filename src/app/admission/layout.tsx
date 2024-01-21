@@ -5,7 +5,7 @@ export default function AdmissionLayout({
 }) {
   return (
     <main>
-      <div className="xs-padding-inline sm-padding-inline">
+      <div className="xs-padding-block xs-padding-inline sm-padding-block sm-padding-inline">
         {children}
       </div>
     </main>

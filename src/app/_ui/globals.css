@@ -61,15 +61,15 @@ h6 {
 }
 
 .xs-padding-block {
-  padding-inline: 3em;
+  padding-block: 6em;
 }
 
 .xs-padding-block-start {
-  padding-inline: 3em;
+  padding-block-start: 6em;
 }
 
 .xs-padding-block-end {
-  padding-inline: 3em;
+  padding-block-end: 6em;
 }
 
 .xs-padding-inline {
@@ -90,15 +90,15 @@ h6 {
   }
 
   .sm-padding-block-start {
-    padding-inline: 6em;
+    padding-block-start: 8em;
   }
 
   .sm-padding-block-end {
-    padding-inline: 6em;
+    padding-block-end: 8em;
   }
 
   .sm-padding-block {
-    padding-inline: 6em;
+    padding-block: 8em;
   }
 
   .sm-padding-inline {

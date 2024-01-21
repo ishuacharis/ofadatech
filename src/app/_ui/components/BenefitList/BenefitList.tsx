@@ -9,7 +9,7 @@ const BenefitList = () => {
   return (
     <section className={style.benefits}>
       <div className="container">
-        <div className="xs-padding-inline sm-padding-inline">
+        <div className="xs-padding-block xs-padding-inline sm-padding-block sm-padding-inline">
           <div className={style.benefits_header}>
             <h2>Our Benefits</h2>
             <p>

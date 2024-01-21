@@ -4,7 +4,7 @@ const FounderVision = () => {
   return (
     <section className={style.vision}>
       <div className="container">
-        <div className="xs-padding-inline sm-padding-inline">
+        <div className="xs-padding-block xs-padding-inline sm-padding-block sm-padding-inline">
           <div className={style.vision_header}>
             <h2>Chairman{`'`}s Vision</h2>
           </div>
