@@ -4,9 +4,13 @@ const Tour = () => {
   return (
     <section>
       <div className={style.container}>
-        <p className={style.video}>
-          Video placeholder for the school tour
-        </p>
+        <div className="xs-padding-inline sm-padding-inline">
+          <div className={style.video_container}>
+            <p className={style.video}>
+              Video placeholder for the school tour
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   )

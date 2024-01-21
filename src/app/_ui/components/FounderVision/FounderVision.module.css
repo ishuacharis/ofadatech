@@ -1,14 +1,11 @@
 .vision {
   margin-block: 6em;
-  padding-inline: 3em;
+  /* padding-inline: 3em; */
 }
 
 .vision_header h2 {
   margin-bottom: 1em;
-  font-size: 5em;
-  line-height: 50px;
-  position: relative;
-  word-spacing: 10px;
+  text-align: center;
 }
 
 .vision_header h2::after {

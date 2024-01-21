@@ -1,6 +1,5 @@
 .benefits {
   margin-block: 6em;
-   padding-inline: 3em;  
 }
   
 .benefits_header {
@@ -13,9 +12,6 @@
   
 .benefits_header h2 {
   margin-bottom: 1em;
-  font-size: 3.8em;
-  line-height: 50px;
-  position: relative;
   border-bottom: 1px solid  var(--grey-color);
 }
   
@@ -30,13 +26,14 @@
 .benefit_list {
   display: flex;
   flex-direction: column;
-  gap: 4em;
+  row-gap: 4em;
 }
   
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .benefit_list {
     flex-direction: row;
     flex-wrap: wrap;
+    column-gap: 2em;
   } 
 }
   
@@ -45,6 +42,7 @@
     display: flex;
     align-items: center;
   }
+
   .benefit_list {
     gap: 4em;
     justify-content: center;

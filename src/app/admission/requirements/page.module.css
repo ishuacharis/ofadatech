@@ -1,11 +1,11 @@
 .main {
-  padding-inline: 3em;
   padding-block: 4rem;
 }
 
-.main h1{
+.main h1 {
   font-size: 5rem;
   margin-bottom: 4rem;
+  line-height: 50px;
 }
 
 .main p {

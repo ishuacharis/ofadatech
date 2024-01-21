@@ -36,14 +36,40 @@ h4,
 h5,
 h6 {
   font-family: var(--font-raleway);
+  position: relative;
+}
+
+h1 {
+  font-size: 5em;
+  line-height: 50px;
+  word-spacing: 10px;
+}
+
+h2 {
+  font-size: 4em;
+  line-height: 40px;
+  word-spacing: 10px;
+}
+
+h6 {
+  font-size: 3em;
+  line-height: 28px;
 }
 
 .row {
   padding-inline: 3em;
 }
 
+.xs-padding-inline {
+  padding-inline: 3em;
+}
+
 @media screen and (min-width: 768px) {
   .row {
+    padding-inline: 6em;
+  }
+
+  .sm-padding-inline {
     padding-inline: 6em;
   }
 }

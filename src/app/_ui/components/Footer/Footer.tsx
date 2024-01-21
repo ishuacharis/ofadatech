@@ -40,7 +40,7 @@ const Footer = () => {
   return (
     <footer className={style.footer}>
       <div className="container">
-        <div className="row">
+        <div className="xs-padding-inline sm-padding-inline">
           <div className={style.sitemap_container}>
             <div className={style.about}>
               <div className={style.logo_container}>Logo</div>
