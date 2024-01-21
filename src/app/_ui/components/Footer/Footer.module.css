@@ -54,7 +54,7 @@
 }
 
 .quick_link_item li {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5em;
 }
 
@@ -64,7 +64,6 @@
   font-weight: bold;
   display: inline-block;
   width: 1em;
-  margin-left: -1em;
 }
 
 .quick_link_item li a {
