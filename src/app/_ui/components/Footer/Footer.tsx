@@ -9,7 +9,7 @@ import { QuickLinkInfo, SubLinkInfo } from "@/app/types/type";
 
 const contacts = [
   {
-    text: "info@ofadtech.ng",
+    text: "info@ofadatech.ng",
     icon: <IoMail size={30} className={style.svg} />
   },
   {
@@ -40,7 +40,7 @@ const Footer = () => {
   return (
     <footer className={style.footer}>
       <div className="container">
-        <div className="xs-padding-inline sm-padding-inline">
+        <div className="xs-padding-inline xs-padding-block sm-padding-inline sm-padding-block">
           <div className={style.sitemap_container}>
             <div className={style.about}>
               <div className={style.logo_container}>Logo</div>

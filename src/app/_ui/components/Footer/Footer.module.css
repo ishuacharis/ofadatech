@@ -1,7 +1,5 @@
 .footer {
   --color: #eee; 
-  padding-top: 6em;
-  padding-bottom: 3em;
   background: var(--header-bg);
   color: var(--color);
 }
@@ -20,7 +18,7 @@
 .about_text {
   font-size: 1.6rem;
   line-height: 24px;
-  text-align: center;
+  text-align: left;
 }
 
 .details {
@@ -36,14 +34,14 @@
 }
 
 .quick_links {
-  display: flex;
-  margin-bottom: 4em;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* margin-bottom: 4em; */
+  /* flex-wrap: wrap; */
 }
 
 .quick_link_item {
-  flex-basis: calc(50% - 2rem);
-  margin-bottom: 5em;
+  /* flex-basis: calc(50% - 2rem); */
+  /* margin-bottom: 5em; */
 }
 
 .quick_link_item h4 {
@@ -153,21 +151,6 @@
 }
 
 @media screen  and (min-width: 768px) {
-  .sitemap_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .about {
-    width: calc(50% - 2rem);
-  }
-
-  .quick_links {
-    width: calc(50% - 2rem);
-    flex-wrap: wrap;
-  }
-
   .copyright_content {
     flex-direction: row;
     justify-content: space-between;
@@ -180,6 +163,20 @@
 
   .socials {
     justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .sitemap_container {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 30% 1fr;
+  }
+
+  .quick_links {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
