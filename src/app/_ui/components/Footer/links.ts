@@ -1,16 +1,57 @@
+import { QuickLinkInfo } from "@/app/types/type";
 
-export const quickLinks = [
+export const quickLinks: QuickLinkInfo[] = [
   {
-    title: "About us",
-    subLinks: ["History", "Leadership and Organogram", "Founder's Vision"]
+    name: "About us", 
+    sublinks: [
+      {
+        title: "History",
+        link: "/#",
+      },
+      {
+        title: "Leadership and Organogram",
+        link: "/about/leadership",
+      },
+      {
+        title: "Founder's Vision",
+        link: "/#"
+      }
+    ]
   },
   {
-    title: "Academics",
-    subLinks: ["Special Features", "Gallery"]
+    name: "Academics",
+    sublinks: [
+      {
+        title: "Faculty of Engineering",
+        link: "/academics/engineering",
+      },
+      {
+        title: "Faculty of Hospitality",
+        link: "/academics/hospitality"
+      },
+      {
+        title: "Faculty of Agriculture",
+        link: "/academics/agriculture"
+      },
+      {
+        title: "Faculty of Business & Finance",
+        link: "/academics/business",
+      },
+      {
+        title: "Faculty of Creative Art",
+        link: "/academics/art"
+      },
+      {
+        title: "Faculty of Computer Science",
+        link: "/academics/computer"
+      }
+    ]
   },
   {
-    title: "Contact",
-    subLinks: ["Information"]
+    name: "Contact",
+    sublinks: [
+      {title: "Information", link: "/#"}
+    ]
   },
 ];
 

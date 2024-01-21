@@ -5,6 +5,7 @@ import { IoMail } from "react-icons/io5";
 import { footerLinks, quickLinks } from "./links";
 import { Each } from "../Each/Each";
 import style from "./Footer.module.css";
+import { QuickLinkInfo, SubLinkInfo } from "@/app/types/type";
 
 const contacts = [
   {
@@ -64,13 +65,13 @@ const Footer = () => {
             <div className={style.quick_links}>
               <Each
                 of={quickLinks}
-                render={(item: any, index: number) => (
+                render={(item: Readonly<QuickLinkInfo>, index: number) => (
                   <div className={style.quick_link_item} key={index}>
-                    <h4>{item.title}</h4>
+                    <h4>{item.name}</h4>
                     <ul>
                       <Each
-                        of={item.subLinks}
-                        render={(link: any, index: number) => (<li><Link href={"/#"} key={index}>{link}</Link></li>)}
+                        of={item.sublinks}
+                        render={(sublink: Readonly<SubLinkInfo>, index: number) => (<li><Link href={sublink.link} key={index}>{sublink.title}</Link></li>)}
                       />
                     </ul>
                   </div> 

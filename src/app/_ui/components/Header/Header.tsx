@@ -19,7 +19,7 @@ const Header = ({ open, toggleMenu }: Props) => {
             <ul className={style.nav_list}>
               <Each
                 of={nav}
-                render={(item: NavInfo, index: number) => (
+                render={(item: Readonly<NavInfo>, index: number) => (
                   <li className={style.nav_item} key={index}>
                     <button type="button" className={style.nav_button}>{item.name}</button>
                     <div className={style.nav_dropdown_wrapper}>
@@ -33,7 +33,7 @@ const Header = ({ open, toggleMenu }: Props) => {
                           <ul className={style.nav_dropdown_list}>
                             <Each
                               of={item.sublinks}
-                              render={(sublink: SubLinkInfo, index: number) => (
+                              render={(sublink: Readonly<SubLinkInfo>, index: number) => (
                                 <li className={style.nav_dropdown_list_item}>
                                   <Link key={index} href={sublink.link} className={style.nav_dropdown_list_link}>{sublink.title}</Link>
                                 </li>
