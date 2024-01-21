@@ -1,4 +1,6 @@
-export const benefits = [
+import { BenefitInfo } from "@/app/types/type";
+
+export const benefits: BenefitInfo[] = [
   {
     title: "Holistic learning",
     text: "Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education."

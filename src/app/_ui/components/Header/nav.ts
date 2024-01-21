@@ -1,9 +1,4 @@
-export interface NavInfo {
-  name: string;
-  heading: string;
-  description: string;
-  sublinks: string[];
-};
+import { NavInfo } from "@/app/types/type";
 
 export const nav: NavInfo[] =[
   {

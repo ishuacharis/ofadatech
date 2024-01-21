@@ -1,6 +1,7 @@
 import { benefits } from "@/data/benefits";
 import { BenefitCard } from "../Benefits/BenefitCard";
 import { Each } from "../Each/Each";
+import { BenefitInfo } from "@/app/types/type";
 import style from "./BenefitList.module.css";
 
 
@@ -17,7 +18,7 @@ const BenefitList = () => {
         <ul className={style.benefit_list}>
           <Each
             of={benefits}
-            render={(item: any, index: number) => (
+            render={(item: BenefitInfo, index: number) => (
               <BenefitCard key={index} item={item} />
             )}
           />
