@@ -41,11 +41,11 @@ const Footer = () => {
     <footer className={style.footer}>
       <div className="container">
         <div className="xs-padding-inline xs-padding-block sm-padding-inline sm-padding-block">
-          <div className={style.sitemap_container}>
+          <div className={`xs-padding-block-end ${style.sitemap_container}`}>
             <div className={style.about}>
               <div className={style.logo_container}>Logo</div>
               <p className={style.about_text}>
-                Empower today, succed tomorrow
+                Empower today, succeed tomorrow
               </p>
               <p className={style.about_text}>
                 Crafting futures, creating leaders

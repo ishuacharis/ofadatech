@@ -33,20 +33,7 @@
   align-items: center;
 }
 
-.quick_links {
-  /* display: flex; */
-  /* margin-bottom: 4em; */
-  /* flex-wrap: wrap; */
-}
-
-.quick_link_item {
-  /* flex-basis: calc(50% - 2rem); */
-  /* margin-bottom: 5em; */
-}
-
 .quick_link_item h4 {
-  font-size: 1.6rem;
-  line-height: 24px;
   margin-bottom: 1em;
   color: var(--white-color);
 }
@@ -180,12 +167,3 @@
   }
 }
 
-@media screen  and (min-width: 991px) {
-  .about_text {
-    text-align: left;
-    line-height: 30px;
-  }
-  .quick_links {
-    flex-wrap: nowrap;
-  }
-}
