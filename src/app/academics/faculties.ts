@@ -30,8 +30,8 @@ export const faculties: Record<string, FacultyInfo> = {
     name: "computer",
     depts: ["Fintech", "Software Development"]
   },
-  "finance": {
-    name: "finance",
+  "business": {
+    name: "business",
     depts: ["Business", "Finance", "Marketing", "SEO", "Accounting",  "Analytics", "Advertisement"]
   },
   "art": {
