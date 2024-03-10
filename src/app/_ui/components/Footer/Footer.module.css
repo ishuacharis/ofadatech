@@ -2,6 +2,7 @@
   --color: #eee; 
   background: var(--header-bg);
   color: var(--color);
+  margin-top: auto;
 }
 
 .about {
