@@ -21,7 +21,7 @@ const Header = ({ open, toggleMenu }: Props) => {
                 of={nav}
                 render={(item: Readonly<NavInfo>, index: number) => (
                   <li className={style.nav_item} key={index}>
-                    <button type="button" className={style.nav_button}>{item.name}</button>
+                    <button type="button" className={style.nav_button} role="button">{item.name}</button>
                     <div className={style.nav_dropdown_wrapper}>
                       <div className={style.nav_dropdown}>
                         <div className={style.nav_dropdown_content}>
