@@ -7,7 +7,9 @@ const TextSliderWrapper = () => {
   return (
     <section className={style.wrapper}>
       <div className={style.overlay}></div>
-      <TextSlider />
+      <div className={style.slide_container}>
+        <TextSlider />
+      </div>
     </section>
   )
 };
