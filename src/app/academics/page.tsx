@@ -25,7 +25,7 @@ export default function AcademicsPage() {
                     </div>
                   </div>
                   <div className="text type-xs type-200 text-center-xs text-start-md">
-                    Welcome to our Academics page, where we take pride in providing a comprehensive and stimulating educational experience for your child. Our kindergarten school{`'`}s academic program is thoughtfully designed to foster a love for learning while building a strong foundation of essential skills and knowledge. From language arts and mathematics to science and social studies, our curriculum is carefully crafted to spark curiosity and encourage active exploration.
+                    Welcome to our Academics page, where we take pride in providing a comprehensive and stimulating educational experience for your students. Our students school{`'`}s academic program is thoughtfully designed to foster a love for learning while building a strong foundation of essential skills and knowledge. From Engineering and finance to hospitality and creative art, our curriculum is carefully crafted to spark curiosity and encourage active exploration.
                   </div>
                 </div>
               </div>
