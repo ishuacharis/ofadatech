@@ -7,11 +7,6 @@ const nextConfig = {
         destination: '/about/leadership',
         permanent: true,
       },
-      {
-        source: '/admission',
-        destination: '/admission/requirements',
-        permanent: true,
-      },
     ]
   }
 }

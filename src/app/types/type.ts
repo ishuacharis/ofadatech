@@ -15,3 +15,5 @@ export interface BenefitInfo {
   title: string;
   text: string;
 };
+
+export interface Todo {}
