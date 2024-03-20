@@ -12,11 +12,6 @@ const nextConfig = {
         destination: '/admission/requirements',
         permanent: true,
       },
-      {
-        source: '/academics',
-        destination: '/academics/engineering',
-        permanent: true,
-      },
     ]
   }
 }
