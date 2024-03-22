@@ -170,7 +170,7 @@ h6 {
 
 .card-border::before {
   z-index: 200;
-  border: 2px solid #262662;
+  border: 2px solid var(--header-bg);
   block-size: 100%;
   border-radius: 6px;
   content: " ";
