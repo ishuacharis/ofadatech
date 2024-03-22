@@ -78,6 +78,10 @@ h6 {
   flex-direction: column;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 .align-items-center-xs {
   align-items: center;
 }
@@ -95,11 +99,23 @@ h6 {
   grid-template-columns: minmax(0, 1fr);
 }
 
+.grid-template-columns-xs-repeat {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-auto-columns {
   grid-auto-columns: minmax(0, 1fr);
 }
 
 .grid-column-gap-one {
+  column-gap: 40px;
+}
+
+.grid-row-gap-one {
+  row-gap: 40px;
+}
+
+.grid-column-gap-two {
   column-gap: 50px;
 }
 
@@ -150,6 +166,10 @@ h6 {
 .text-center-xs {
   text-align: center;
 }
+
+.text-center {
+  text-align: center;
+}
  
 /* END TEXT */
 
@@ -168,6 +188,10 @@ h6 {
   border-radius: 8px;
 }
 
+.card-box-shadow {
+  box-shadow: 4px 4px 0px 2px var(--header-bg);
+}
+
 .card-border::before {
   z-index: 200;
   border: 2px solid var(--header-bg);
@@ -182,8 +206,24 @@ h6 {
   position: absolute;
 }
 
-
 /* CARD */
+
+
+/* HEADING */
+
+
+.heading {
+  color: #1a1a1a;
+}
+
+.heading-5 {
+  font-size: 48px;
+  line-height: 62.4px;
+  font-weight: 700;
+}
+
+/* HEADING */
+
 
 .row {
   padding-inline: 3em;
@@ -217,8 +257,16 @@ h6 {
   padding-block: 50px;
 }
 
+.spacing-padding-xs-size-one {
+  padding: 40px;
+}
+
 .spacing-padding-xs-inline-size-one {
   padding-inline: 30px;
+}
+
+.spacing-padding-xs-inline-size-two {
+  padding-inline: 40px;
 }
 
 .spacing-padding-xs-block,
@@ -234,8 +282,28 @@ h6 {
   padding-inline: 20px;
 }
 
-.spacing-margin-xs-blockend {
+.spacing-margin-xs-blockend-xs {
   margin-block-end: 14px;
+}
+
+.spacing-margin-blockend-xs-size-one {
+  margin-block-end: 50px;
+}
+
+.spacing-margin-size-one {
+  margin-block-end: 50px;
+}
+
+.spacing-margin-xs-inline {
+  margin-inline: 16px;
+}
+
+.spacing-margin-xs-blockstart {
+  margin-block-start: 40px;
+}
+
+.spacing-margin-xs-blockend {
+  margin-block-end: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -291,18 +359,41 @@ h6 {
     align-items: flex-start;
   }
 
-  .grid-template-columns-md {
+
+  .grid-template-columns-md-repeat {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  /* SPACING */
 
+  .spacing-padding-md-size-one {
+    padding: 50px;
+  }
   .spacing-padding-md-block-size-one {
     padding-block: 100px;
+  }
+  
+  .spacing-padding-md-block-size-two {
+    padding-block: 50px;
   }
   
   .spacing-padding-md-inline-size-one {
     padding-inline: 80px;
   }
+
+  .spacing-padding-md-inline-size-two {
+    padding-inline: 50px;
+  }
+
+  .spacing-margin-blockend-md-size-one {
+    margin-block-end: 80px;
+  }
+
+  .spacing-margin-md-inline {
+    margin-inline: 80px;
+  }
+
+  /* END SPACING */
 
   .text-center-md {
     text-align: center;
