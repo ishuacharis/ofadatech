@@ -26,7 +26,11 @@ const Header = ({ open, toggleMenu }: Props) => {
                       <div className={style.nav_dropdown}>
                         <div className={style.nav_dropdown_content}>
                           <div className={style.nav_dropdown_content_summary}>
-                            <h2>{item.heading}</h2>
+                            <Link href={item.link}>
+                              <span>
+                                <h2>{item.heading}</h2>
+                              </span>
+                            </Link>
                             <br></br>
                             <p>{item.description}</p>
                           </div>

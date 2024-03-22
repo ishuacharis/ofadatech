@@ -69,7 +69,6 @@
 
 .nav_item {
   display: flex;
-  cursor: pointer;
   align-items: center;
   min-height: 36px;
   background: transparent;

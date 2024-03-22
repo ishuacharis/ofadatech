@@ -6,6 +6,7 @@ export interface NavInfo {
   name: string;
   heading: string;
   description: string;
+  link: string;
   sublinks: SubLinkInfo[];
 };
 
