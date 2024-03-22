@@ -6,7 +6,7 @@ export const quickLinks: QuickLinkInfo[] = [
     sublinks: [
       {
         title: "History",
-        link: "/#",
+        link: "/about",
       },
       {
         title: "Leadership and Organogram",

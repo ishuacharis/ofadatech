@@ -10,7 +10,7 @@ export interface NavInfo {
   sublinks: SubLinkInfo[];
 };
 
-export type QuickLinkInfo = Omit<NavInfo, "heading" | "description">
+export type QuickLinkInfo = Omit<NavInfo, "heading" | "description" | "link">
 
 export interface BenefitInfo {
   title: string;
