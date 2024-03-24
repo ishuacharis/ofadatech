@@ -155,15 +155,15 @@ h6 {
   font-weight: 500;
 }
 
+.text-center-xs {
+  text-align: center;
+}
+
 .type-md {
   font-weight: 700;
 }
 
 .type-start-center {
-  text-align: center;
-}
-
-.text-center-xs {
   text-align: center;
 }
 
@@ -223,7 +223,6 @@ h6 {
 }
 
 /* HEADING */
-
 
 .row {
   padding-inline: 3em;
@@ -369,6 +368,7 @@ h6 {
   .spacing-padding-md-size-one {
     padding: 50px;
   }
+  
   .spacing-padding-md-block-size-one {
     padding-block: 100px;
   }
