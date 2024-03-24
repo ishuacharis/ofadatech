@@ -2,10 +2,10 @@ export default function AboutPage() {
   return (
     <main>
       <div className="spacing-margin-xs-blockstart">
-        <div className="spacing spacing-margin-xs-inline spacing-margin-md-inline">
+        <div className="spacing spacing-margin-xs-inline spacing-margin-md-inline-30">
           <div className="flex flex-col">
             <div className="card card-rounded-all card-border card-box-shadow">
-              <div className="spacing spacing-padding-xs-block-size-one spacing-padding-xs-inline-size-one      spacing-padding-sm-block-size-one spacing-padding-sm-inline-size-one spacing-padding-md-block-size-one spacing-padding-md-inline-size-one">
+              <div className="spacing spacing-padding-xs-block-size-one spacing-padding-xs-inline-size-one      spacing-padding-block-60 spacing-padding-inline-40 spacing-padding-block-80 spacing-padding-inline-60">
                 <div className="grid grid-template-columns-xs grid-template-columns-md-repeat  grid-template-columns-md grid-auto-columns grid-column-gap-one">
                   <div className="flex flex-col align-items-center-xs align-items-start-md">
                     <div className="spacing spacing-margin-xs-blockend-xs">
@@ -29,7 +29,7 @@ export default function AboutPage() {
             </div>
 
             <div id="mission">
-              <div className="spacing spacing-padding-xs-block-size-one spacing-padding-xs-inline-size-one      spacing-padding-sm-block-size-one spacing-padding-sm-inline-size-one spacing-padding-md-block-size-one spacing-padding-md-inline-size-one">
+              <div className="spacing spacing-padding-xs-block-size-one spacing-padding-xs-inline-size-one      spacing-padding-block-60 spacing-padding-inline-40 spacing-padding-block-80 spacing-padding-inline-60">
                 <div className="flex flex-col align-items-center">
                   <div className="spacing spacing-margin-size-one">
                     <div className="flex flex-col align-items-center">
@@ -59,7 +59,7 @@ export default function AboutPage() {
                     <div className="flex">
                       <div className="grid grid-display grid-template-columns-xs grid-template-columns-md-repeat  grid-auto-columns grid-row-gap-one grid-column-gap-two">
                         <div className="card card-rounded-all card-border card-box-shadow">
-                          <div className="spacing spacing-padding-xs-size-one spacing-padding-md-size-one">
+                          <div className="spacing spacing-padding-40">
                             <div className="text type-400 type-md">
                               <div>Mission</div>
                             </div>
@@ -71,7 +71,7 @@ export default function AboutPage() {
                           </div>
                         </div>
                         <div className="card card-rounded-all card-border card-box-shadow">
-                          <div className="spacing spacing-padding-xs-size-one spacing-padding-md-size-one">
+                          <div className="spacing spacing-padding-40">
                             <div className="text type-400 type-md">
                               <div>Vision</div>
                             </div>

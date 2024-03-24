@@ -37,8 +37,8 @@ const Footer = () => {
   return (
     <footer>
       <div className="bg-primary">
-        <div className="spacing spacing-margin-inline spacing-margin-inline-50">
-          <div className="spacing spacing-padding-inline-30 spacing-padding-blockstart-60 spacing-padding-blockend-30 spacing-padding-blockstart-80 spacing-padding-blockend-40 spacing-padding-inline-80">
+        <div className="spacing spacing-margin-inline-16 spacing-margin-inline-30">
+          <div className="spacing spacing-padding-xs-block-size-one spacing-padding-xs-inline-size-one      spacing-padding-block-60 spacing-padding-inline-40 spacing-padding-block-80 spacing-padding-inline-60">
             <div className="spacing spacing spacing-margin-blockend-20">
               <div className="flex flex-col">
                 <div className="spacing spacing-margin-blockend-40">
@@ -116,12 +116,12 @@ const Footer = () => {
                 
                 <div className={style.copyright_content}>
                   <div className="flex flex-grow-1 spacing-margin-blockstart-20 spacing-margin-blockend-20">
-                    <div className="grid grid-template-columns-xs justify-items-center-xs justify-items-initial-md grid-template-columns-3 grid-auto-columns flex-grow-1">
+                    <div className="grid grid-template-columns-xs justify-items-center-xs justify-items-initial-md grid-template-columns-3 grid-auto-columns flex-grow-1 grid-row-gap-20">
                       <ul className="flex span-md-2">
                         <Each
                           of={footerLinks}
                           render={(item: string, index: number) =>(
-                            <li className={style.footer_link_item} key={index}>
+                            <li className="sapcing spacing-margin-inlineend-16" key={index}>
                               <Link href={"/#"}>
                                 <div className="text text-white type-200">{item}</div>
                               </Link>
@@ -133,7 +133,7 @@ const Footer = () => {
                         <Each
                           of={socials}
                           render={(item: any, index: number) => (
-                            <li className="" key={index}>
+                            <li key={index}>
                               <Link href={"/#"}>
                                 <div className="icon-container">
                                   {
